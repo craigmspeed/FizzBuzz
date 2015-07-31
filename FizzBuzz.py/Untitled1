@@ -1,0 +1,17 @@
+#!/usr/bin/python -tt
+
+output = []
+for arg in range(1,101):
+	# print arg,
+
+	if not (arg%3 or arg%5):
+		pa = 'Fizz Buzz'
+	elif not arg%3:
+		pa = 'Fizz'
+	elif not arg%5:
+		pa = 'Buzz'
+	else:
+		pa = repr(arg)
+	output.append(pa)
+
+print ' '.join(output)
